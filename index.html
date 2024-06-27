@@ -9,18 +9,25 @@
 <body>
     <header class="header">
         <div class="container">
-            <img class="logo" src="./plantar.png" alt="logo do site">
+            <img class="logo" src="./plantar.png" alt="Logo Loja Relva Verde">
             <nav>
                 <ul>
+                    <li><a href="#">Minha Conta</a></li>
                     <li><a href="#">Meu Carrinho</a></li>
-                    <li><a href="#">Meu Perfil</a></li>
-                    <li><input type="text" placeholder="Pesquisar..."></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Bem-vindo à Loja Relva Verde</h1>
+                <p>Encontre os melhores produtos agropecuários aqui!</p>
+                <button class="btn-primary">Veja nossos produtos</button>
+            </div>
+        </section>
+
         <section class="categories">
             <div class="container">
                 <div class="category">
@@ -36,76 +43,27 @@
                         <button class="next" onclick="nextProduct('category1')">➡</button>
                     </div>
                 </div>
-                
-                <div class="category">
-                    <h2>Categoria 2</h2>
-                    <div class="product-slider">
-                        <button class="prev" onclick="prevProduct('category2')">⬅</button>
-                        <div class="products">
-                            <div class="product">Produto 2.1</div>
-                            <div class="product">Produto 2.2</div>
-                            <div class="product">Produto 2.3</div>
-                            <div class="product">Produto 2.4</div>
-                        </div>
-                        <button class="next" onclick="nextProduct('category2')">➡</button>
-                    </div>
-                </div>
-                
-                <div class="category">
-                    <h2>Categoria 3</h2>
-                    <div class="product-slider">
-                        <button class="prev" onclick="prevProduct('category3')">⬅</button>
-                        <div class="products">
-                            <div class="product">Produto 3.1</div>
-                            <div class="product">Produto 3.2</div>
-                            <div class="product">Produto 3.3</div>
-                            <div class="product">Produto 3.4</div>
-                        </div>
-                        <button class="next" onclick="nextProduct('category3')">➡</button>
-                    </div>
-                </div>
-                
-                <div class="category">
-                    <h2>Categoria 4</h2>
-                    <div class="product-slider">
-                        <button class="prev" onclick="prevProduct('category4')">⬅</button>
-                        <div class="products">
-                            <div class="product">Produto 4.1</div>
-                            <div class="product">Produto 4.2</div>
-                            <div class="product">Produto 4.3</div>
-                            <div class="product">Produto 4.4</div>
-                        </div>
-                        <button class="next" onclick="nextProduct('category4')">➡</button>
-                    </div>
-                </div>
-                
-                <div class="category">
-                    <h2>Categoria 5</h2>
-                    <div class="product-slider">
-                        <button class="prev" onclick="prevProduct('category5')">⬅</button>
-                        <div class="products">
-                            <div class="product">Produto 5.1</div>
-                            <div class="product">Produto 5.2</div>
-                            <div class="product">Produto 5.3</div>
-                            <div class="product">Produto 5.4</div>
-                        </div>
-                        <button class="next" onclick="nextProduct('category5')">➡</button>
-                    </div>
-                </div>
+
+                <!-- Adicione as outras categorias conforme o modelo -->
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <div class="contacts">
-                <p>Contato: <a href="mailto:contato@lojarelvaverde.com.br">Email</a></p>
-                <p><a href="https://www.instagram.com/lojarelvaverde" target="_blank">Instagram</a></p>
-                <p><a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></p>
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contato</h3>
+                    <p>Email: <a href="mailto:contato@lojarelvaverde.com.br">contato@lojarelvaverde.com.br</a></p>
+                    <p>Telefone: (XX) XXXX-XXXX</p>
+                    <p>WhatsApp: <a href="https://wa.me/1234567890" target="_blank">(XX) XXXXX-XXXX</a></p>
+                </div>
+                <div class="social-links">
+                    <h3>Siga-nos</h3>
+                    <a href="https://www.instagram.com/lojarelvaverde" target="_blank">Instagram</a>
+                </div>
             </div>
-        </div>
-        <div class="bottom-bar">
-            <div class="container">
+            <div class="bottom-bar">
                 <p>&copy; 2024 Loja Relva Verde. Todos os direitos reservados.</p>
             </div>
         </div>
