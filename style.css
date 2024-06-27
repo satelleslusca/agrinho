@@ -1,16 +1,37 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container {
     text-align: center;
     max-width: 600px;
+    margin: 100px auto 20px; /* Add top margin to account for fixed header */
     background: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
