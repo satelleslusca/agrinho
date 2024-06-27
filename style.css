@@ -11,13 +11,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #007BFF;
+    background: #0B4D15;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header .logo {
@@ -30,6 +29,8 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .header nav ul li {
@@ -82,7 +83,7 @@ main {
 
 .prev,
 .next {
-    background: #007BFF;
+    background: #0B4D15;
     color: white;
     border: none;
     padding: 10px;
@@ -101,7 +102,7 @@ main {
 }
 
 footer {
-    background: #007BFF;
+    background: #0B4D15;
     color: white;
     text-align: center;
     padding: 20px;
