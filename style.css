@@ -1,68 +1,114 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
 }
 
-header {
+.header {
     position: fixed;
     top: 0;
     width: 100%;
     background: #007BFF;
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    margin-top: auto;
-    width: 100%;
-    background: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+.header .logo {
+    max-height: 50px;
 }
 
-.container {
+.header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    margin: 0 15px;
+}
+
+.header nav ul li a,
+.header nav ul li input {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.header nav ul li input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1;
+    padding: 100px 20px 20px; /* Add padding to avoid content going under the fixed header */
+}
+
+.category {
+    margin-bottom: 40px;
     text-align: center;
-    max-width: 600px;
-    margin: 100px auto 20px; /* Add top margin to account for fixed header */
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .product {
-    display: none;
+    min-width: 100%;
+    transition: transform 0.5s ease;
 }
 
-.product img {
-    max-width: 100%;
-    height: auto;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-input[type="radio"]:checked + .product {
-    display: block;
-}
-
-.buttons {
-    margin-top: 20px;
-}
-
-.buttons label {
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
-    background-color: #007BFF;
+.prev,
+.next {
+    background: #007BFF;
     color: white;
-    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+footer {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .contacts a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
